@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 """Write a script that starts a Flask web application
 
-        The application listens on 0.0.0.0, port 5000.
+    The application listens on 0.0.0.0, port 5000.
     Routes:
         /: Displays 'Hello HBNB!'.
         /hbnb: Displays 'HBNB'.
         /c/<text>: Displays 'C' followed by the value of <text>.
-        /python/(<text>): Displ 'Python' followed by the value of <text>
-
+        /python/(<text>): Displ 'Python' followed by the value of <text>.
 """
 
 from flask import Flask
@@ -35,6 +34,11 @@ def hbnb_hbnb_c(text):
 @app.route("/python/<text>", strict_slashes=False)
 def hbnb_hbnb_python(text='is cool'):
     return 'Python {}'.format(escape(text)).replace('_', ' ')
+
+
+@app.route("/number/<int:n>", strict_slashes=False)
+def hbnb_hbnb_number(n):
+    return '{} is a number'.format(escape(n))
 
 
 if __name__ == "__main__":
