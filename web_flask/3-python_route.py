@@ -6,7 +6,7 @@
         /: Displays 'Hello HBNB!'.
         /hbnb: Displays 'HBNB'.
         /c/<text>: Displays 'C' followed by the value of <text>.
-        /python/(<text>): Displ 'Python' followed by the value of <text>
+        /python/(<text>): Display 'Python' followed by the value of <text>
 
 """
 

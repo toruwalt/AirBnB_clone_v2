@@ -6,7 +6,9 @@
         /: Displays 'Hello HBNB!'.
         /hbnb: Displays 'HBNB'.
         /c/<text>: Displays 'C' followed by the value of <text>.
-        /python/(<text>): Displ 'Python' followed by the value of <text>.
+        /python/(<text>): Display 'Python' followed by the value of <text>.
+        /number/<n>: display “n is a number” only if n is an integer
+        /number_template/<n>: display a HTML page only if n is an integer:
 """
 
 from flask import Flask, render_template
