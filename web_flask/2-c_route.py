@@ -9,16 +9,19 @@ app = Flask(__name__)
 
 @app.route("/", strict_slashes=False)
 def hello():
+    """Return Hello HBNB"""
     return 'Hello HBNB!'
 
 
 @app.route("/hbnb", strict_slashes=False)
 def hbnb_hbnb():
+    """Return HBNB"""
     return 'HBNB'
 
 
 @app.route("/c/<text>", strict_slashes=False)
 def hbnb_hbnb_c(text):
+    """Return C is cool"""
     return 'C {}'.format(escape(text)).replace('_', ' ')
 
 
